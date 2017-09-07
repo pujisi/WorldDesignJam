@@ -13,6 +13,109 @@ li {
   list-style: none;
 }
 
+#login {
+  background: url("../images/backgroundHongkong@2x.png") no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  background-color: #000000;
+}
+
+#login h1 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 64px;
+  color: #ffffff;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/* button style */
+
+.btnFacebookLogin {
+  background: #43619C;
+  color: #ffffff;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+  width: 280px;
+  height: 60px;
+  border-style: none;
+  border-radius: 30px;
+  margin: 20px auto;
+}
+
+.btnFacebookLogin:before {
+  content: "";
+  display: inline-block;
+  background: url("../images/iconFacebook@2x.png") no-repeat;
+  background-size: contain;
+  padding-right: 15px;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.btnFacebookLogin a {
+  color: #ffffff;
+}
+
+.btnTwitterLogin {
+  background: #24A9E6;
+  color: #ffffff;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+  width: 280px;
+  height: 60px;
+  border-style: none;
+  border-radius: 30px;
+  margin: 20px auto;
+}
+
+.btnTwitterLogin:before {
+  content: "";
+  display: inline-block;
+  background: url("../images/iconTwitter@2x.png") no-repeat;
+  background-size: contain;
+  padding-right: 15px;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.btnTwitterLogin a {
+  color: #ffffff;
+}
+
+.btnRegister {
+  background: #ffffff;
+  color: #000000;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+  width: 280px;
+  height: 60px;
+  border-style: none;
+  border-radius: 30px;
+  margin: 20px auto;
+}
+
+.btnRegister a {
+  color: #000000;
+  display: block;
+}
+
+/* hr style */
+hr {
+  height: 1px;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  width: 280px;
+  margin: 0 auto;
+}
+
+
 #home h1 {
   font-family: 'Dosis', sans-serif;
   font-size: 36px;
@@ -42,7 +145,7 @@ li {
   background-color: rgba(0,0,0,0.30);
   font-family: 'Dosis', sans-serif;
   font-size: 16px;
-  color: rgba(255,255,255,0.50);
+  color: #ffffff;
   padding: 0 15px;
 }
 
