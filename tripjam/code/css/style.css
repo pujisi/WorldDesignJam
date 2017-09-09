@@ -109,7 +109,7 @@ img{
 }
 
 /* hr style */
-.hrOr {
+.hrText {
   color: #ffffff;
   position: relative;
   text-align: center;
@@ -117,7 +117,7 @@ img{
   margin: 0 auto;
 }
 
-.hrOr:before {
+.hrText:before {
   content:"";
   display: block;
   width: 108px;
@@ -128,7 +128,7 @@ img{
   left: 0;
 }
 
-.hrOr:after {
+.hrText:after {
   content:"";
   display: block;
   width: 108px;
@@ -168,6 +168,7 @@ img{
 #home header .navSearchform .search {
   width: 100%;
   height: 44px;
+  line-height: 44px;
   border-radius: 22px;
   border-style: none;
   background-color: rgba(0,0,0,0.30);
@@ -179,6 +180,7 @@ img{
 
 .navSearchform ::-webkit-input-placeholder {
   color: rgba(255,255,255,0.50);
+  padding: auto 0;
 }
 
 #home header .navSearchform button {
