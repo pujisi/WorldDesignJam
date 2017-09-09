@@ -179,7 +179,7 @@ img{
 }
 
 .navSearchform ::-webkit-input-placeholder {
-  color: rgba(255,255,255,0.50);
+  color: rgba(255,255,255,0.50)
 }
 
 #home header .navSearchform button {
@@ -197,6 +197,7 @@ img{
 
 .tab li a {
   font-size: 14px;
+  font-weight: bold;
   color: rgba(255,255,255,0.80);
   padding: 15px 20px 13px 20px;
   display: block;
