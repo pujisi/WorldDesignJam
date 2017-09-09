@@ -284,7 +284,7 @@ img{
   bottom: 0px;
   left: 0px;
   background: #ffffff;
-  border-top: #f3f3f3 0.5px solid;
+  border-top: rgba(178, 178, 178, 0.30) 0.5px solid;
   width: 100%;
   height: 49px;
 }
@@ -309,29 +309,43 @@ img{
   margin-top: 5px;
 }
 
-.tabBarTable li:last-child {
-  border-right: 0;
+.iconSearch:before {
+  color: #000000;
+  content:"\f002";
+  font-size: 1.2em;
+  font-family: "FontAwesome";
+}
+.iconLike:before {
+  color: #000000;
+  content:"\f08a";
+  font-size: 1.2em;
+  font-family: "FontAwesome";
+}
+.iconAdd:before {
+  background: -webkit-linear-gradient(-225deg, #09C5E6 0%, #19CDA1 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  content:"\f055";
+  font-size: 1.2em;
+  font-family: "FontAwesome";
+}
+.iconNotification:before {
+  color: #000000;
+  content:"\f0a2";
+  font-size: 1.2em;
+  font-family: "FontAwesome";
+}
+.iconUser:before {
+  color: #000000;
+  content:"\f2c0";
+  font-size: 1.2em;
+  font-family: "FontAwesome";
 }
 
-.icon-tw:before {
-  color: #000000;
-  content:"\f099";
-  font-family: "FontAwesome";
-}
-.icon-fb:before {
-  color: #000000;
-  content:"\f082";
-  font-family: "FontAwesome";
-}
-.icon-gp:before {
-  color: #000000;
-  content:"\f0d5";
-  font-family: "FontAwesome";
-}
-.icon-yt:before {
-  color: #000000;
-  content:"\f167";
-  font-family: "FontAwesome";
+.iconAdd a {
+  background: -webkit-linear-gradient(-225deg, #09C5E6 0%, #19CDA1 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 @media screen and (max-width:600px) {
