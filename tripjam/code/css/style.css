@@ -331,6 +331,31 @@ img{
   padding: 4px;
 }
 
+/* tagSort */
+#like .tagSort {
+  margin: 10px;
+}
+
+#like .tagCountriy a {
+  background: rgba(255, 255, 255, 0.10);
+  color: #666666;
+  font-size: 12px;
+  font-weight: lighter;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  padding: 2px 5px;
+  margin: 5px;
+  display: block;
+  float: left;
+}
+
+#like .selectedTag a {
+  color: #19CDA1;
+  border: 1px solid #19CDA1;
+  background: rgba(25, 205, 161, 0.05);
+  font-weight: normal;
+}
+
 /* Grid Spot Style */
 #like .gridSpot li {
   float: left;
@@ -350,7 +375,6 @@ img{
   object-fit: cover;
   object-position: top;
 }
-
 
 /* TabBar */
 .tabBarFixed {
