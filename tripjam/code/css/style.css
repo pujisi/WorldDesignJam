@@ -210,20 +210,23 @@ img{
 .tab li a {
   font-size: 14px;
   font-weight: bold;
-  color: rgba(255,255,255,0.80);
   padding: 15px 20px 13px 20px;
   display: block;
 }
 
-.tab li a:hover {
+#home .tab li a {
+  color: rgba(255,255,255,0.80);
+}
+
+#home .tab li a:hover {
   color: #ffffff;
 }
 
-.tab .selected {
+#home .tab .selected {
   border-bottom: 2px solid #ffffff;
 }
 
-.tab .selected a {
+#home .tab .selected a {
   color: #ffffff;
 }
 
@@ -325,7 +328,7 @@ img{
   background: -webkit-linear-gradient(-225deg, #09C5E6 0%, #19CDA1 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  content:"\f055";
+  content:"\f0fe";
   font-size: 1.2em;
   font-family: "FontAwesome";
 }
@@ -346,6 +349,35 @@ img{
   background: -webkit-linear-gradient(-225deg, #09C5E6 0%, #19CDA1 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+/* navigationTabBar */
+.navTabBar {
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
+}
+
+.navTabBar .navTitle {
+  color: #000000;
+  font-size: 15px;
+  text-align: center;
+  padding: 15px 0 10px 0;
+  box-sizing: border-box;
+}
+
+.navTabBar .tab li a {
+  color: rgba(25, 205, 161, 0.80);
+}
+
+.navTabBar .tab li a:hover {
+  color: #19CDA1;
+}
+
+.navTabBar .tab .selected {
+  border-bottom: 2px solid #19CDA1;
+}
+
+.navTabBar .tab .selected a {
+  color: #19CDA1;
 }
 
 @media screen and (max-width:600px) {
