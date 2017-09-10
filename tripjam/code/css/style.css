@@ -230,12 +230,62 @@ img{
   color: #ffffff;
 }
 
+/* navigationTabBar */
+.navTabBar {
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
+}
+
+.navTabBar .navTitle {
+  color: #000000;
+  font-size: 15px;
+  text-align: center;
+  padding: 15px 0 10px 0;
+  box-sizing: border-box;
+}
+
+.navTabBar .tab li a {
+  color: rgba(25, 205, 161, 0.80);
+}
+
+.navTabBar .tab li a:hover {
+  color: #19CDA1;
+}
+
+.navTabBar .tab .selected {
+  border-bottom: 2px solid #19CDA1;
+}
+
+.navTabBar .tab .selected a {
+  color: #19CDA1;
+}
+
+
 /* Special Contents Style */
 #home .specialContents img {
   width: 100%;
   height: 320px;
   object-fit: cover;
   object-position: top;
+}
+
+#home .specialContents {
+  position: relative;
+}
+
+#home .specialContents span {
+  position: absolute;
+  color: #000000;
+  font-size: 32px;
+  font-family: "yumincho", serif;
+  font-weight: bold;
+  line-height: 1.3;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
 }
 
 /* listCountry style */
@@ -281,6 +331,27 @@ img{
   padding: 4px;
 }
 
+/* Grid Spot Style */
+#like .gridSpot li {
+  float: left;
+  width: 33.0%;
+  margin-right: 0.4%;
+  margin-bottom: 1px;
+}
+
+#like .gridSpot li:nth-child(3n){
+  margin-right: 0;
+}
+
+#like .gridSpot li img {
+  display: block;
+  width: 100%;
+  height: 125px;
+  object-fit: cover;
+  object-position: top;
+}
+
+
 /* TabBar */
 .tabBarFixed {
   position: fixed;
@@ -318,12 +389,14 @@ img{
   font-size: 1.2em;
   font-family: "FontAwesome";
 }
+
 .iconLike:before {
   color: #000000;
   content:"\f08a";
   font-size: 1.2em;
   font-family: "FontAwesome";
 }
+
 .iconAdd:before {
   background: -webkit-linear-gradient(-225deg, #09C5E6 0%, #19CDA1 100%);
   -webkit-text-fill-color: transparent;
@@ -332,12 +405,14 @@ img{
   font-size: 1.2em;
   font-family: "FontAwesome";
 }
+
 .iconNotification:before {
   color: #000000;
   content:"\f0a2";
   font-size: 1.2em;
   font-family: "FontAwesome";
 }
+
 .iconUser:before {
   color: #000000;
   content:"\f2c0";
@@ -351,33 +426,9 @@ img{
   -webkit-background-clip: text;
 }
 
-/* navigationTabBar */
-.navTabBar {
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
-}
-
-.navTabBar .navTitle {
-  color: #000000;
-  font-size: 15px;
-  text-align: center;
-  padding: 15px 0 10px 0;
-  box-sizing: border-box;
-}
-
-.navTabBar .tab li a {
-  color: rgba(25, 205, 161, 0.80);
-}
-
-.navTabBar .tab li a:hover {
-  color: #19CDA1;
-}
-
-.navTabBar .tab .selected {
-  border-bottom: 2px solid #19CDA1;
-}
-
-.navTabBar .tab .selected a {
-  color: #19CDA1;
+/* TabBar分高さ確保 */
+#wrap {
+  margin-bottom: 59px;
 }
 
 @media screen and (max-width:600px) {
