@@ -393,27 +393,33 @@ input::-webkit-input-placeholder {
   background: #ffffff;
   border-top: rgba(178,178,178,0.30) 0.5px solid;
   width: 100%;
-  height: 49px;
 }
 
 .tabBarTable {
-  display: table;
-  table-layout: fixed;
-  text-align: center;
-  width: 100%;
-  height: 49px;
+  display: flex;
+  align-items: center;
 }
 
 .tabBarTable li {
-  display: table-cell;
-  vertical-align: middle;
+  flex: 0 0 20%;
+  width: 20%;
+  text-align: center;
 }
 
 .tabBarTable li a {
+  display: block;
   color: #000000;
   font-size: 10px;
+  height: 30px;
+  padding: 10px 0;
+}
+
+.tabBarTable li a::before {
   display: block;
-  margin-top: 5px;
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  margin: 0 auto;
 }
 
 .iconSearch:before {
@@ -453,12 +459,6 @@ input::-webkit-input-placeholder {
   font-family: "FontAwesome";
 }
 
-.iconAdd a {
-  background: -webkit-linear-gradient(-225deg, #09C5E6 0%, #19CDA1 100%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
 /* Story Card Style */
 .card {
   width: 100%;
@@ -467,6 +467,14 @@ input::-webkit-input-placeholder {
   margin: 10px 0;
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
   position: relative;
+}
+
+.cardInner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 150px;
 }
 
 .cardImg {
@@ -491,12 +499,11 @@ input::-webkit-input-placeholder {
 }
 
 .cardTitleInfo {
-  position: absolute;
-  top: 45px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  padding: 0 15px;
 }
 
 .cardTitle  {
