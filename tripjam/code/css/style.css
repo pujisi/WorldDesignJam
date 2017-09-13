@@ -241,6 +241,7 @@ input::-webkit-input-placeholder {
 
 /* navigationTabBar */
 .navTabBar {
+  background: #ffffff;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
 }
 
@@ -589,6 +590,17 @@ li a.iconAdd {
   vertical-align: middle;
 }
 
+.noReadBorder {
+  border : 3px solid #19CDA1;
+  border-radius: 23px;
+}
+
+.noRead a {
+  padding: 13px;
+  background: #fffded;
+  display: block;
+}
+
 .listUserName {
   font-size: 14px;
   margin: 0 10px ;
@@ -599,11 +611,11 @@ li a.iconAdd {
 
 /* List Notification */
 .listNotification {
-  margin: 15px 0;
+  margin: 2px 0 15px 0;
 }
 
 .notificationText {
-  width: 77%;
+  width: 75%;
   font-size: 14px;
   margin: 0 10px;
   color: #000000;
