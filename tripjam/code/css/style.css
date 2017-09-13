@@ -521,6 +521,10 @@ input::-webkit-input-placeholder {
   width: 40px;
   height: 40px;
   border-radius: 20px;
+  object-fit: cover;
+}
+
+.card .UserIconS {
   position: absolute;
   top: 150px;
   left: 50%;
@@ -529,7 +533,6 @@ input::-webkit-input-placeholder {
   -ms-transform: translate(-50%,-50%);
   -o-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  object-fit: cover;
 }
 
 .cardContent {
@@ -539,13 +542,36 @@ input::-webkit-input-placeholder {
 }
 
 .cardUserName {
-  margin: 12px 0;
+  margin: 5px 0 20px 0;
   color: #000000;
 }
 
 .cardLike, .cardComment {
  margin-right: 20px;
 }
+
+/* List Style */
+.listUser:first-child {
+  padding: 15px;
+  background: #ffffff;
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.listUser {
+  padding: 15px;
+  background: #ffffff;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.listUserName {
+  font-size: 10px;
+  margin: 0 10px ;
+  color: #000000;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 
 /* TabBar分高さ確保 */
 #wrap {

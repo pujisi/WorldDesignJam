@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prototype of Trip Jam</title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href="favicon.ico" rel="shortcut icon" />
+</head>
+<body id="like">
+<!--navigationTabBar-->
+  <header class="navTabBar">
+    <div class="navTitle">
+      <p>Like</p>
+    </div>
+    <nav>
+      <ul class="tab">
+        <li><a href="like_spot.html">Spot</a></li>
+        <li><a href="like_story.html">Story</a></li>
+        <li class="selected"><a href="like_people.html">People</a></li>
+      </ul>
+    </nav>
+  </header>
+<!-- contents -->
+  <div id="wrap">
+    <!-- tagSort -->
+    <div class="tagSort clearfix">
+      <span class="tagCountry selectedTag"><a href="">All</a></span>
+      <span class="tagCountry"><a href="">🇯🇵Japan</a></span>
+      <span class="tagCountry"><a href="">🇹🇭Thailand</a></span>
+      <span class="tagCountry"><a href="">🇹🇼Taiwan</a></span>
+      <span class="tagCountry"><a href="">🇨🇳China</a></span>
+      <span class="tagCountry"><a href="">🇰🇵North Koria</a></span>
+      <span class="tagCountry"><a href="">🇲🇽Mexico</a></span>
+      <span class="tagCountry"><a href="">🇵🇱Poland</a></span>
+      <span class="tagCountry"><a href="">🇷🇺Russian</a></span>
+      <span class="tagCountry"><a href="">🇺🇸USA</a></span>
+    </div>
+    <div class="content">
+      <div class="listUser">
+        <img class="UserIconS" src="https://hustlepress.co.jp/wp/wp-content/uploads/34a3923e0298c68adcd52747aff61cf9/araki02_gravure01.jpg" />
+        <p class="listUserName">Yuko Fujisaki</p>
+      </div>
+      <div class="listUser">
+        <img class="UserIconS" src="https://hustlepress.co.jp/wp/wp-content/uploads/34a3923e0298c68adcd52747aff61cf9/araki02_gravure01.jpg" />
+        <p class="listUserName">Yuko Fujisaki</p>
+      </div>
+      <div class="listUser">
+        <img class="UserIconS" src="https://hustlepress.co.jp/wp/wp-content/uploads/34a3923e0298c68adcd52747aff61cf9/araki02_gravure01.jpg" />
+        <p class="listUserName">Yuko Fujisaki</p>
+      </div>
+      <div class="listUser">
+        <img class="UserIconS" src="https://hustlepress.co.jp/wp/wp-content/uploads/34a3923e0298c68adcd52747aff61cf9/araki02_gravure01.jpg" />
+        <p class="listUserName">Yuko Fujisaki</p>
+      </div>
+      <div class="listUser">
+        <img class="UserIconS" src="https://hustlepress.co.jp/wp/wp-content/uploads/34a3923e0298c68adcd52747aff61cf9/araki02_gravure01.jpg" />
+        <p class="listUserName">Yuko Fujisaki</p>
+      </div>
+      <div class="listUser">
+        <img class="UserIconS" src="https://hustlepress.co.jp/wp/wp-content/uploads/34a3923e0298c68adcd52747aff61cf9/araki02_gravure01.jpg" />
+        <p class="listUserName">Yuko Fujisaki</p>
+      </div>
+      <div class="listUser">
+        <img class="UserIconS" src="https://hustlepress.co.jp/wp/wp-content/uploads/34a3923e0298c68adcd52747aff61cf9/araki02_gravure01.jpg" />
+        <p class="listUserName">Yuko Fujisaki</p>
+      </div>
+      <div class="listUser">
+        <img class="UserIconS" src="https://hustlepress.co.jp/wp/wp-content/uploads/34a3923e0298c68adcd52747aff61cf9/araki02_gravure01.jpg" />
+        <p class="listUserName">Yuko Fujisaki</p>
+      </div>
+      <div class="listUser">
+        <img class="UserIconS" src="https://hustlepress.co.jp/wp/wp-content/uploads/34a3923e0298c68adcd52747aff61cf9/araki02_gravure01.jpg" />
+        <p class="listUserName">Yuko Fujisaki</p>
+      </div>
+      <div class="listUser">
+        <img class="UserIconS" src="https://hustlepress.co.jp/wp/wp-content/uploads/34a3923e0298c68adcd52747aff61cf9/araki02_gravure01.jpg" />
+        <p class="listUserName">Yuko Fujisaki</p>
+      </div>
+      <div class="listUser">
+        <img class="UserIconS" src="https://hustlepress.co.jp/wp/wp-content/uploads/34a3923e0298c68adcd52747aff61cf9/araki02_gravure01.jpg" />
+        <p class="listUserName">Yuko Fujisaki</p>
+      </div>
+
+    </div>
+  </div>
+
+<!--FixedTabBar-->
+  <footer class="tabBarFixed">
+      <ul class="tabBarTable">
+        <li class="iconSearch"><a href="search_destination.html">Search</a></li>
+        <li class="iconLike"><a href="like_spot.html">Like</a></li>
+        <li class="iconAdd"><a href="#">Add Story</a></li>
+        <li class="iconNotification"><a href="notification_all.html">Noticication</a></li>
+        <li class="iconUser"><a href="#">Profile</a></li>
+      </ul>
+  </footer>
+
+
+<!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDV2qIxNquG92BrUtkFyMphujvRMcTphKY",
+      authDomain: "tripjam-55e50.firebaseapp.com",
+      databaseURL: "https://tripjam-55e50.firebaseio.com",
+      projectId: "tripjam-55e50",
+      storageBucket: "tripjam-55e50.appspot.com",
+      messagingSenderId: "180322927948"
+    };
+    firebase.initializeApp(config);
+  </script>
+</body>
+</html>
