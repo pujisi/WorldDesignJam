@@ -166,6 +166,19 @@ img{
 }
 
 
+h1.hashHeading1 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  margin: 30px 20px 20px 20px;
+}
+
+h1.hashHeading1 a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
 /* navigationTabBarWithSearch */
 #home header {
   width: 100%;
@@ -369,18 +382,18 @@ input::-webkit-input-placeholder {
 }
 
 /* Grid Spot Style */
-#like .gridSpot li {
+.gridSpot li {
   float: left;
   width: 33.0%;
   margin-right: 0.4%;
   margin-bottom: 1px;
 }
 
-#like .gridSpot li:nth-child(3n){
+.gridSpot li:nth-child(3n){
   margin-right: 0;
 }
 
-#like .gridSpot li img {
+.gridSpot li img {
   display: block;
   width: 100%;
   height: 125px;
@@ -472,7 +485,7 @@ li a.iconAdd {
   height: auto;
   background: #ffffff;
   margin: 10px 0;
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
   position: relative;
 }
 
@@ -488,7 +501,7 @@ li a.iconAdd {
   content:"";
   width: 100%;
   height: 150px;
-  background-color: rgba(0,0,0,0.50);
+  background-color: rgba(0,0,0,0.30);
   position: absolute;
 }
 
@@ -512,7 +525,6 @@ li a.iconAdd {
   align-items: center;
   height: 150px;
   padding: 0 15px;
-  z-index: 10;
 }
 
 .cardTitle  {
@@ -630,6 +642,185 @@ li a.iconAdd {
 .timeStampGrey {
   font-size: 10px;
   color: #ababab;
+}
+
+/* Profile style */
+.profileCover {
+  background: #ffffff;
+  height: auto;
+}
+
+.imgCover {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: top;
+  filter: brightness(80%);
+}
+
+.profileSetting {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  float: right;
+}
+
+.btnWhiteBorder a {
+  background: rgba(0,0,0,0.30);
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  padding: 0 10px;
+  border: 1px  rgba(255,255,255,0.80) solid;
+  border-radius: 15px;
+  margin-left: 10px;
+  color: rgba(255,255,255,0.80);
+  display: block;
+}
+
+.btnWhiteBorder {
+  float: left;
+}
+
+.iconSetting:before {
+  color: rgba(255,255,255,0.80);
+  content:"\f013";
+  font-size: 14px;
+  margin-right: 3px;
+  font-family: "FontAwesome";
+}
+
+.btnUserLike a {
+  background: #ffffff;
+  text-align: center;
+  height: 44px;
+  line-height: 44px;
+  font-size: 14px;
+  padding: 0 12px;
+  border-radius: 22px;
+  float: left;
+  margin-left: 10px;
+  display: block;
+  position: absolute;
+  top: 298px;
+  right: 15px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
+  color: #000000;
+  display: block;
+}
+
+.userIconM {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  object-fit: cover;
+  display: block;
+}
+
+.profileUserIcon {
+  position: absolute;
+  top: 320px;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.userName {
+  font-size: 12px;
+  margin-top: 0;
+  color: #000000;
+  text-align: center;
+}
+
+.userProfileSet {
+  position: relative;
+  top: 30px;
+  margin: 15px;
+}
+
+.userReviewPoint {
+  text-align: center;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.userFavCount {
+  display: flex;
+}
+
+.userReviewCount {
+  width: 50%;
+  text-align: center;
+}
+
+.userReviewCount a {
+  color: #000000;
+  font-size: 14px;
+  padding: 10px 0;
+  line-height: 1.5;
+  display: block;
+}
+
+.userLikeCount {
+  width: 50%;
+  text-align: center;
+}
+
+.userLikeCount a {
+  color: #000000;
+  font-size: 14px;
+  padding: 10px 0;
+  line-height: 1.5;
+  display: block;
+}
+
+.sublabel {
+  font-size: 8px;
+  color: #999999;
+  display: block;
+}
+
+.profileDiscription {
+  width: 100%;
+  height: auto;
+  font-family: 'yumincho';
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 10px 0;
+}
+
+.twoTabBar {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
+}
+
+.twoTab {
+  width: 50%;
+  text-align: center;
+}
+
+.twoTab a {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(25, 205, 161, 0.80);
+  display: block;
+  padding: 15px 0;
+}
+
+.twoTab a:hover {
+  color: #19CDA1;
+}
+
+.twoTab.selected {
+  border-bottom: 2px solid #19CDA1;
+}
+
+.twoTab.selected a {
+  color: #19CDA1;
 }
 
 /* TabBar分高さ確保 */
