@@ -12,7 +12,7 @@
   font-style: normal;
 }
 
-body{
+body {
   font-family: Hiragino Sans, "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "ヒラギノヒラギノ角ゴ ProN W3", Roboto, "Droid Sans", "Noto Sans Japanese", "YuGothic", "游ゴシック", Meiryo, "メイリオ", Verdana, "MS Pゴシック", sans-serif;
   height: 100%;
   background: #f9f9f9;
@@ -254,12 +254,11 @@ input::-webkit-input-placeholder {
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
 }
 
-.navTabBar .navTitle {
+.navTitle {
   color: #000000;
   font-size: 15px;
   text-align: center;
-  padding: 15px 0 10px 0;
-  box-sizing: border-box;
+  padding-top: 14px;
 }
 
 .navTabBar .tab li a {
@@ -276,6 +275,34 @@ input::-webkit-input-placeholder {
 
 .navTabBar .tab .selected a {
   color: #19CDA1;
+}
+
+/* NavigationBar */
+.navBar {
+  width: 100%;
+  height: 43px;
+  background: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
+}
+
+.iconBack {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  float: left;
+  margin: 11px 15px;
+}
+
+.iconBack:before {
+  color: #000000;
+  content:"\f104";
+  font-size: 1.2em;
+  margin-right: 5px;
+  font-family: "FontAwesome";
+}
+
+.clear {
+  clear: both;
 }
 
 /* Special Contents Style */
@@ -641,7 +668,7 @@ li a.iconAdd {
 }
 
 /* Profile style */
-.profileCover {
+.Cover {
   background: #ffffff;
   height: auto;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
@@ -811,6 +838,131 @@ li a.iconAdd {
 
 .twoTab.selected a {
   color: #19CDA1;
+}
+
+/* Story Style */
+.story {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
+  position: relative;
+}
+
+.storyInner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 240px;
+}
+
+.storyInner:before {
+  content:"";
+  width: 100%;
+  height: 240px;
+  background-color: rgba(0,0,0,0.30);
+  position: absolute;
+}
+
+.storyTitleInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+  padding: 0 15px;
+}
+
+.storyTitle  {
+  font-family: 'yumincho';
+  font-size: 25px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.story .userIconS {
+  position: absolute;
+  top: 195px;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.storyUserName {
+  font-size: 10px;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 225px;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.storySubinformation {
+  margin: 10px 15px;
+}
+
+.subinformationLabel {
+  font-size: 10px;
+  color: #999999;
+  margin-right: 5px;
+}
+
+/* Contents FeedBack Set */
+.contentsFeedBack {
+  display: flex;
+}
+
+.contentsLike {
+  width: 50%;
+  text-align: center;
+}
+
+.contentsLike a {
+  font-size: 14px;
+  padding: 10px 0;
+  line-height: 1.5;
+  display: block;
+}
+
+.contentsComment {
+  width: 50%;
+  text-align: center;
+}
+
+.contentsComment a {
+  font-size: 14px;
+  padding: 10px 0;
+  line-height: 1.5;
+  display: block;
+}
+
+.sublabel {
+  font-size: 8px;
+  color: #999999;
+  display: block;
+}
+
+/* Story Card Style */
+.storyCard {
+  margin: 10px;
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
+}
+
+.spotImg {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* TabBar分高さ確保 */
