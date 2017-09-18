@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prototype of Trip Jam</title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href="favicon.ico" rel="shortcut icon" />
+</head>
+<body id="photo">
+
+<!--navigationTabBar-->
+  <header class="navBar">
+    <a href=""><div class="iconBack"></div></a>
+    <div class="navTitle">
+      <p></p>
+    </div>
+  </header>
+
+<!-- contents -->
+  <div id="wrap">
+    <div class="content">
+
+<!--Spot Photo-->
+
+<div class="userBox">
+  <img class="userIconS" src="https://pbs.twimg.com/profile_images/867752496021872640/LdUTNIMd_400x400.jpg" />
+  <div class="thumbnailRight">
+    <p class="userName">Koji Fujisaki &#x1f1ef;&#x1f1f5;</p>
+    <a class="subinformationLabel" href="">🕒 7:46</a><a class="subinformationLabel" href="">🌏 Thanon Sukhumvit,Bangkok</a>
+  </div>
+</div>
+
+  <div class="photoCard">
+    <img class="spotImg" src="images/spots/bangkok-280746_1280.jpg" alt />
+    <div class="storySubinformation">
+      <span class="subinformationLabel">💖 2,112</span>
+      <span class="subinformationLabel">💬 1 </span>
+      <span class="subinformationLabel">🌏 Thanon Sukhumvit,Bangkok</span>
+    </div>
+        <p class="userText userTextBox">朝ごはん。おばちゃんがめちゃくちゃよそう。異国の朝はいい。</p>
+      <div class="contentsFeedBack">
+        <p class="contentsLike"><a class="sublabel" href="">💖 Like</a></p>
+        <p class="contentsComment"><a class="sublabel" href="">💬 Comment</a></p>
+      </div>
+  </div>
+
+
+<!-- Story Comments -->
+<div class="comments">
+  <p class="commentsTitle">💬 3 Comments</p>
+  <div class="commentBox">
+    <div class="userBox">
+      <img class="userIconS" src="https://hustlepress.co.jp/wp/wp-content/uploads/34a3923e0298c68adcd52747aff61cf9/araki02_gravure01.jpg" />
+      <div class="thumbnailRight">
+        <p class="userName">Yuko Araki &#x1f1ef;&#x1f1f5;</p>
+        <p class="timeStampGrey">18minites ago</p>
+      </div>
+    </div>
+    <p class="userText">どれも美味しそうですね！<br />一人旅ですか？素敵ですね。今度一緒に旅してほしいです♡来月タイにはじめていくのですが、Storyにのってる写真をみて屋台にすごく行ってみたくなりました！</p>
+    <div class="commentFeedBack"><a class="sublabel" href="">1 Like</a> <a class="sublabel" href="">💖 Like</a> <a class="sublabel" href="">💬 Reply</a></div>
+  </div>
+
+  <div class="commentBox">
+    <div class="userBox">
+      <img class="userIconS" src="http://girls-hapiness.club/wp-content/uploads/2015/03/5188cd1d77b76fa40ce73cd32b211986.png" />
+      <div class="thumbnailRight">
+        <p class="userName">Haruna Kojima &#x1f1ef;&#x1f1f5;</p>
+        <p class="timeStampGrey">2017/9/3</p>
+      </div>
+    </div>
+    <p class="userText">何月くらいがオススメですか？</p>
+    <div class="commentFeedBack"><a class="sublabel" href="">1 Like</a> <a class="sublabel" href="">💖 Like</a> <a class="sublabel" href="">💬 Reply</a></div>
+  </div>
+
+  <div class="commentReplyBox">
+    <div class="userBox">
+      <img class="userIconS" src="https://pbs.twimg.com/profile_images/867752496021872640/LdUTNIMd_400x400.jpg" />
+      <div class="thumbnailRight">
+        <p class="userName">Haruna Kojima &#x1f1ef;&#x1f1f5;</p>
+        <p class="timeStampGrey">6hours ago</p>
+      </div>
+    </div>
+    <p class="userText"><a class="replyName" href="profile_story.html">@Yuko Araki</a> 乾期の11月ごろがスコールも少なくておすすめですよ！</p>
+    <div class="commentFeedBack"><a class="sublabel" href="">1 Like</a> <a class="sublabel" href="">💖 Like</a> <a class="sublabel" href="">💬 Reply</a></div>
+  </div>
+
+
+</div>
+
+    </div>
+  </div>
+
+<!--FixedcommentFormBar-->
+  <footer class="commentFormBarFixed">
+    <form class="commentFormBar">
+      <a class="iconAddOption" href=""></a><input placeholder="comment..." type="textarea" name="search" value="" /><button class="formPost" type="submit" value="検索" />Post</button>
+      </div>
+    </form>
+  </footer>
+
+
+<!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDV2qIxNquG92BrUtkFyMphujvRMcTphKY",
+      authDomain: "tripjam-55e50.firebaseapp.com",
+      databaseURL: "https://tripjam-55e50.firebaseio.com",
+      projectId: "tripjam-55e50",
+      storageBucket: "tripjam-55e50.appspot.com",
+      messagingSenderId: "180322927948"
+    };
+    firebase.initializeApp(config);
+  </script>
+</body>
+</html>

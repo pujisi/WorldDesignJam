@@ -966,6 +966,14 @@ li a.iconAdd {
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
 }
 
+.photoCard {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
+}
+
+
 .spotImg {
   width: 100%;
   object-fit: cover;
@@ -980,6 +988,7 @@ li a.iconAdd {
   height: auto;
   background: #ffffff;
   padding: 15px;
+  box-sizing: border-box;
 }
 
 .commentsTitle {
@@ -1012,6 +1021,7 @@ li a.iconAdd {
 
 .commentFeedBack {
   display: flex;
+  font-size: 10px;
   margin: 10px 10px 10px 0;
 }
 
@@ -1034,6 +1044,56 @@ li a.iconAdd {
   padding: 2px;
 }
 
+/* CommentFormBar */
+.commentFormBarFixed {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  background: #ffffff;
+  border-top: rgba(178,178,178,0.30) 0.5px solid;
+  width: 100%;
+}
+
+.commentFormBar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.commentFormBar input {
+  width: 100%;
+  height: 49px;
+  background: none;
+  border-style: none;
+  line-height: 2.5;
+}
+
+.commentFormBar input::-webkit-input-placeholder {
+  color: rgba(0,0,0,0.50);
+  line-height: 1.5;
+}
+
+.formPost {
+  height: 34px;
+  border-style: none;
+  color: #ffffff;
+  background-image: linear-gradient(-225deg, #09C5E6 0%, #19CDA1 100%);
+  border-radius: 17px;
+  padding: 0 10px;
+  margin: 0 15px;
+}
+
+.iconAddOption {
+  float: left;
+  margin: 0 15px;
+}
+
+.iconAddOption:before {
+  color: #666666;
+  content:"\f196";
+  font-size: 34px;
+  font-family: "FontAwesome";
+}
 
 /* TabBar分高さ確保 */
 #wrap {
@@ -1041,6 +1101,10 @@ li a.iconAdd {
 }
 
 #story #wrap {
+  margin-bottom: 50px;
+}
+
+#photo #wrap {
   margin-bottom: 50px;
 }
 
