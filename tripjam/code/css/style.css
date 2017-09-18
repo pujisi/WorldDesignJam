@@ -671,7 +671,7 @@ li a.iconAdd {
 .Cover {
   background: #ffffff;
   height: auto;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
 }
 
 .imgCover {
@@ -802,10 +802,13 @@ li a.iconAdd {
   display: block;
 }
 
-.profileDiscription {
+.userText{
   font-family: 'yumincho';
   font-size: 12px;
   line-height: 1.8;
+}
+
+.userTextBox {
   margin: 10px 15px;
 }
 
@@ -952,6 +955,10 @@ li a.iconAdd {
 }
 
 /* Story Card Style */
+.storySpot {
+  margin-top: 20px;
+}
+
 .storyCard {
   margin: 10px;
   height: auto;
@@ -965,9 +972,76 @@ li a.iconAdd {
   object-position: center;
 }
 
+/* Comments Style */
+.comments {
+  margin-top: 20px;
+  margin-bottom: 0;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  padding: 15px;
+}
+
+.commentsTitle {
+  font-size: 12px;
+  color: #999999;
+}
+
+.userBox {
+  margin: 15px 0;
+}
+
+.userBox .userIconS {
+  width: 40px;
+  vertical-align: middle;
+}
+
+.thumbnailRight {
+  margin: 0 5px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+
+.commentBox {
+}
+
+.commentReplyBox {
+  margin-left: 40px;
+}
+
+.commentFeedBack {
+  display: flex;
+  margin: 10px 10px 10px 0;
+}
+
+.commentFeedBack a:first-child {
+  margin-right: auto;
+}
+
+.commentFeedBack a {
+  margin-right: 10px;
+}
+
+.commentFeedBack a:last-child {
+  margin-right: 0;
+}
+
+.replyName {
+  font-family: 'Hiragino Sans';
+  color: #1E88E5;
+  background: #FFF9C4;
+  padding: 2px;
+}
+
+
 /* TabBar分高さ確保 */
 #wrap {
   margin-bottom: 64px;
+}
+
+#story #wrap {
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width:600px) {
