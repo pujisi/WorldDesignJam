@@ -1,0 +1,42 @@
+[debug] [2017-09-19T13:45:43.022Z] ----------------------------------------------------------------------
+[debug] [2017-09-19T13:45:43.025Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2017-09-19T13:45:43.025Z] CLI Version:   3.11.0
+[debug] [2017-09-19T13:45:43.025Z] Platform:      darwin
+[debug] [2017-09-19T13:45:43.025Z] Node Version:  v6.11.3
+[debug] [2017-09-19T13:45:43.028Z] Time:          Tue Sep 19 2017 22:45:43 GMT+0900 (JST)
+[debug] [2017-09-19T13:45:43.028Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-09-19T13:45:43.044Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-09-19T13:45:43.044Z] > authorizing via signed-in user
+[debug] [2017-09-19T13:45:43.047Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tripjam-55e50  
+ Tue Sep 19 2017 22:45:43 GMT+0900 (JST)
+[debug] [2017-09-19T13:45:43.786Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-19T13:45:43.788Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/tripjam-55e50/tokens  
+ Tue Sep 19 2017 22:45:43 GMT+0900 (JST)
+[debug] [2017-09-19T13:45:44.416Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'tripjam-55e50'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing code directory for upload...
+[debug] [2017-09-19T13:45:46.735Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/tripjam-55e50/uploads/-KuPNn3AP1e_fmt2RngB?fileCount=44&message=  
+ Tue Sep 19 2017 22:45:46 GMT+0900 (JST)
+[debug] [2017-09-19T13:46:49.109Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-19T13:46:49.110Z] [hosting] .tgz uploaded successfully, waiting for extraction
+[error] 
+[error] Error: File upload failed: Deploy failed.
+[debug] [2017-09-19T13:47:32.185Z] Error Context: {
+  "duration": 99745,
+  "fileCount": 44,
+  "ip": "115.177.149.113",
+  "start": 1505828751547,
+  "status": "failed",
+  "statusMessage": "Deploy failed.",
+  "uid": "113939331958148111011",
+  "uploadedCount": 44,
+  "user": {
+    "email": "devpujisi@gmail.com",
+    "gaiaId": "113939331958148111011",
+    "image": "https://lh3.googleusercontent.com/-eGVOp8IuRag/AAAAAAAAAAI/AAAAAAAAABQ/jaasN6eEvH0/photo.jpg"
+  }
+}

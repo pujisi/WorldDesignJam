@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prototype of Trip Jam</title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href="favicon.ico" rel="shortcut icon" />
+</head>
+<body id="home">
+<!--navigationTabBarWithSearch-->
+  <header>
+    <div class="navSearchform">
+      <form class="search">
+        <input placeholder="Where are you go?" type="text" name="search" value="#SoutheastAsia" /><button type="submit" value="検索" />検索</button>
+      </form>
+    </div>
+    <nav>
+      <ul class="tab">
+        <li><a href="search_destination.html">destination</a></li>
+        <li class="selected"><a href="search_story.html">story</a></li>
+      </ul>
+    </nav>
+  </header>
+<!-- contents -->
+  <div id="wrap">
+    <div class="content">
+
+      <div class="googleMaps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32344078.506329577!2d98.1523827822554!3d8.277721783936569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3233af605e720cd5%3A0x28a70f18542d1b91!2z5p2x5Y2X44Ki44K444Ki!5e0!3m2!1sja!2sjp!4v1505827123043" width="375" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <h1 class="hashHeading1">Recommend</h1>
+
+      <section class="gridStory clearfix">
+      <div class="card">
+        <div class="cardInner" style="background-image:url('images/spots/heartsickness-428103_1280.jpg');" aria-label="aaa">
+          <a class="cardTagCountry" href="">🇻🇳Vietnam</a>
+            <div class="cardTitleInfo">
+              <div class="cardTitleInfoBox">
+                <h1 class="cardTitle">Viet Nam,HANOI</h1>
+                <p class="timeStamp">2017/9/16</p>
+              </div>
+            </div>
+        </div>
+        <a href="story.html">
+          <div class="cardContent">
+            <img class="userIconS" src="https://hustlepress.co.jp/wp/wp-content/uploads/34a3923e0298c68adcd52747aff61cf9/araki02_gravure01.jpg" />
+            <p class="cardUserName">Yuko Fujisaki</p>
+            <span class="cardLike">💖 5,697</span>
+            <span class="cardComment">💬 551</span>
+            <span class="cardLocation">🌏 Hồ Hoàn Kiếm,Hanoi</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="cardInner" style="background-image:url('images/spots/bangkok-1990263_1280.jpg');" aria-label="aaa">
+          <a class="cardTagCountry" href="">🇹🇭Thailand</a>
+            <div class="cardTitleInfo">
+              <div class="cardTitleInfoBox">
+                <h1 class="cardTitle">Bangkok Trip</h1>
+                <p class="timeStamp">2017/9/16</p>
+              </div>
+            </div>
+        </div>
+        <a href="story.html">
+          <div class="cardContent">
+            <img class="userIconS" src="https://pbs.twimg.com/profile_images/867752496021872640/LdUTNIMd_400x400.jpg" />
+            <p class="cardUserName">Koji Fujisaki</p>
+            <span class="cardLike">💖 978</span>
+            <span class="cardComment">💬 551</span>
+            <span class="cardLocation">🌏 Thanon Sukhumvit,Bangkok</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="cardInner" style="background-image:url('images/spots/cambodia-1600376_1280.jpg');" aria-label="aaa">
+          <a class="cardTagCountry" href="">🇰🇭Cambodia</a>
+            <div class="cardTitleInfo">
+              <div class="cardTitleInfoBox">
+                <h1 class="cardTitle">アンコールワット遺跡を巡る夏休み</h1>
+                <p class="timeStamp">2017/9/16</p>
+              </div>
+            </div>
+        </div>
+        <a href="story.html">
+          <div class="cardContent">
+            <img class="userIconS" src="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/14980731_1129486137129547_2180596381401218463_n.jpg?oh=ca58053d1a8727349699c83d679c6dd8&oe=5A1B36D9" />
+            <p class="cardUserName">Naoki Fukushima</p>
+            <span class="cardLike">💖 12</span>
+            <span class="cardComment">💬 1</span>
+            <span class="cardLocation">🌏 Meguro-ku,Tokyo</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="cardInner" style="background-image:url('images/spots/asia-1822569_1280.jpg');" aria-label="aaa">
+          <a class="cardTagCountry" href="">🇱🇦Laos</a>
+            <div class="cardTitleInfo">
+              <div class="cardTitleInfoBox">
+                <h1 class="cardTitle">Laos in 2014</h1>
+                <p class="timeStamp">2015/9/15</p>
+              </div>
+            </div>
+        </div>
+        <a href="story.html">
+          <div class="cardContent">
+            <img class="userIconS" src="https://hustlepress.co.jp/wp/wp-content/uploads/34a3923e0298c68adcd52747aff61cf9/araki02_gravure01.jpg" />
+            <p class="cardUserName">Yuko Fujisaki</p>
+            <span class="cardLike">💖 12</span>
+            <span class="cardComment">💬 1</span>
+            <span class="cardLocation">🌏 Meguro-ku,Tokyo</span>
+          </div>
+        </a>
+      </div>
+
+      </section>
+
+
+      <h1 class="hashHeading1">Recent Story</h1>
+
+            <div class="card">
+              <div class="cardInner" style="background-image:url('images/spots/heartsickness-428103_1280.jpg');" aria-label="aaa">
+                <a class="cardTagCountry" href="">🇻🇳Vietnam</a>
+                  <div class="cardTitleInfo">
+                    <div class="cardTitleInfoBox">
+                      <h1 class="cardTitle">Viet Nam,HANOI</h1>
+                      <p class="timeStamp">2017/9/16</p>
+                    </div>
+                  </div>
+              </div>
+              <a href="story.html">
+                <div class="cardContent">
+                  <img class="userIconS" src="https://hustlepress.co.jp/wp/wp-content/uploads/34a3923e0298c68adcd52747aff61cf9/araki02_gravure01.jpg" />
+                  <p class="cardUserName">Yuko Fujisaki</p>
+                  <span class="cardLike">💖 5,697</span>
+                  <span class="cardComment">💬 551</span>
+                  <span class="cardLocation">🌏 Hồ Hoàn Kiếm,Hanoi</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="card">
+              <div class="cardInner" style="background-image:url('images/spots/bangkok-1990263_1280.jpg');" aria-label="aaa">
+                <a class="cardTagCountry" href="">🇹🇭Thailand</a>
+                  <div class="cardTitleInfo">
+                    <div class="cardTitleInfoBox">
+                      <h1 class="cardTitle">Bangkok Trip</h1>
+                      <p class="timeStamp">2017/9/16</p>
+                    </div>
+                  </div>
+              </div>
+              <a href="story.html">
+                <div class="cardContent">
+                  <img class="userIconS" src="https://pbs.twimg.com/profile_images/867752496021872640/LdUTNIMd_400x400.jpg" />
+                  <p class="cardUserName">Koji Fujisaki</p>
+                  <span class="cardLike">💖 978</span>
+                  <span class="cardComment">💬 551</span>
+                  <span class="cardLocation">🌏 Thanon Sukhumvit,Bangkok</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="card">
+              <div class="cardInner" style="background-image:url('images/spots/london-140785_1280.jpg');" aria-label="aaa">
+                <a class="cardTagCountry" href="">🇬🇧UK</a>
+                  <div class="cardTitleInfo">
+                    <div class="cardTitleInfoBox">
+                      <h1 class="cardTitle">London was Amasing!</h1>
+                      <p class="timeStamp">2017/9/16</p>
+                    </div>
+                  </div>
+              </div>
+              <a href="story.html">
+                <div class="cardContent">
+                  <img class="userIconS" src="http://aikru.com/file/parts/691/3e8345d198ebdfd7ccc82c36d753b0dd.jpg" />
+                  <p class="cardUserName">Rino Sashihara</p>
+                  <span class="cardLike">💖 978</span>
+                  <span class="cardComment">💬 551</span>
+                  <span class="cardLocation">🌏 London</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="card">
+              <div class="cardInner" style="background-image:url('images/spots/man-290186_1280.jpg');" aria-label="aaa">
+                <a class="cardTagCountry" href="">🇪🇸Spain</a>
+                  <div class="cardTitleInfo">
+                    <div class="cardTitleInfoBox">
+                      <h1 class="cardTitle">Liga Española!!!!!</h1>
+                      <p class="timeStamp">2017/9/16</p>
+                    </div>
+                  </div>
+              </div>
+              <a href="story.html">
+                <div class="cardContent">
+                  <img class="userIconS" src="http://girls-hapiness.club/wp-content/uploads/2015/03/5188cd1d77b76fa40ce73cd32b211986.png" />
+                  <p class="cardUserName">Haruna Fujisaki</p>
+                  <span class="cardLike">💖 978</span>
+                  <span class="cardComment">💬 551</span>
+                  <span class="cardLocation">🌏 Barcelona,Spain</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="card">
+              <div class="cardInner" style="background-image:url('images/spots/cambodia-1600376_1280.jpg');" aria-label="aaa">
+                <a class="cardTagCountry" href="">🇰🇭Cambodia</a>
+                  <div class="cardTitleInfo">
+                    <div class="cardTitleInfoBox">
+                      <h1 class="cardTitle">アンコールワット遺跡を巡る夏休み</h1>
+                      <p class="timeStamp">2017/9/16</p>
+                    </div>
+                  </div>
+              </div>
+              <a href="story.html">
+                <div class="cardContent">
+                  <img class="userIconS" src="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/14980731_1129486137129547_2180596381401218463_n.jpg?oh=ca58053d1a8727349699c83d679c6dd8&oe=5A1B36D9" />
+                  <p class="cardUserName">Naoki Fukushima</p>
+                  <span class="cardLike">💖 12</span>
+                  <span class="cardComment">💬 1</span>
+                  <span class="cardLocation">🌏 Meguro-ku,Tokyo</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="card">
+              <div class="cardInner" style="background-image:url('images/spots/asia-1822569_1280.jpg');" aria-label="aaa">
+                <a class="cardTagCountry" href="">🇱🇦Laos</a>
+                  <div class="cardTitleInfo">
+                    <div class="cardTitleInfoBox">
+                      <h1 class="cardTitle">Laos in 2014</h1>
+                      <p class="timeStamp">2015/9/15</p>
+                    </div>
+                  </div>
+              </div>
+              <a href="story.html">
+                <div class="cardContent">
+                  <img class="userIconS" src="https://hustlepress.co.jp/wp/wp-content/uploads/34a3923e0298c68adcd52747aff61cf9/araki02_gravure01.jpg" />
+                  <p class="cardUserName">Yuko Fujisaki</p>
+                  <span class="cardLike">💖 12</span>
+                  <span class="cardComment">💬 1</span>
+                  <span class="cardLocation">🌏 Meguro-ku,Tokyo</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="card">
+              <div class="cardInner" style="background-image:url('images/spots/kuala-lumpur-1820944_1280.jpg');" aria-label="aaa">
+                <a class="cardTagCountry" href="">🇲🇾Malaysia</a>
+                  <div class="cardTitleInfo">
+                    <div class="cardTitleInfoBox">
+                      <h1 class="cardTitle">Nights at Kuala Lumpur</h1>
+                      <p class="timeStamp">2015/9/15</p>
+                    </div>
+                  </div>
+              </div>
+              <a href="story.html">
+                <div class="cardContent">
+                  <img class="userIconS" src="https://hustlepress.co.jp/wp/wp-content/uploads/34a3923e0298c68adcd52747aff61cf9/araki02_gravure01.jpg" />
+                  <p class="cardUserName">Yuko Fujisaki</p>
+                  <span class="cardLike">💖 12</span>
+                  <span class="cardComment">💬 1</span>
+                  <span class="cardLocation">🌏 Meguro-ku,Tokyo</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="card">
+              <div class="cardInner" style="background-image:url('images/spots/eiffel-tower-1156146_1280.jpg');" aria-label="aaa">
+                <a class="cardTagCountry" href="">🇫🇷French</a>
+                  <div class="cardTitleInfo">
+                    <div class="cardTitleInfoBox">
+                      <h1 class="cardTitle">Parisienne Walkways</h1>
+                      <p class="timeStamp">2015/9/15</p>
+                    </div>
+                  </div>
+              </div>
+              <a href="story.html">
+                <div class="cardContent">
+                  <img class="userIconS" src="https://pbs.twimg.com/profile_images/867752496021872640/LdUTNIMd_400x400.jpg" />
+                  <p class="cardUserName">Koji Fujisaki</p>
+                  <span class="cardLike">💖 12</span>
+                  <span class="cardComment">💬 1</span>
+                  <span class="cardLocation">🌏 Meguro-ku,Tokyo</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="card">
+              <div class="cardInner" style="background-image:url('images/spots/eiffel-tower-1156146_1280.jpg');" aria-label="aaa">
+                <a class="cardTagCountry" href="">🇧🇱Saint Barthélemy</a>
+                  <div class="cardTitleInfo">
+                    <div class="cardTitleInfoBox">
+                      <h1 class="cardTitle">Parisienne Walkways</h1>
+                      <p class="timeStamp">2015/9/15</p>
+                    </div>
+                  </div>
+              </div>
+              <a href="story.html">
+                <div class="cardContent">
+                  <img class="userIconS" src="https://pbs.twimg.com/profile_images/867752496021872640/LdUTNIMd_400x400.jpg" />
+                  <p class="cardUserName">Koji Fujisaki</p>
+                  <span class="cardLike">💖 12</span>
+                  <span class="cardComment">💬 1</span>
+                  <span class="cardLocation">🌏 Meguro-ku,Tokyo</span>
+                </div>
+              </a>
+            </div>
+
+    </div>
+  </div>
+
+<!--FixedTabBar-->
+  <footer class="tabBarFixed">
+    <ul class="tabBar">
+      <li><a href="search_destination.html" class="iconSearch">Search</a></li>
+      <li><a href="like_spot.html" class="iconLike">Like</a></li>
+      <li><a href="#" class="iconAdd">Add Story</a></li>
+      <li><a href="notification_all.html" class="iconNotification">Noticication</a></li>
+      <li><a href="profile_story.html" class="iconUser">Profile</a></li>
+    </ul>
+  </footer>
+
+<!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDV2qIxNquG92BrUtkFyMphujvRMcTphKY",
+      authDomain: "tripjam-55e50.firebaseapp.com",
+      databaseURL: "https://tripjam-55e50.firebaseio.com",
+      projectId: "tripjam-55e50",
+      storageBucket: "tripjam-55e50.appspot.com",
+      messagingSenderId: "180322927948"
+    };
+    firebase.initializeApp(config);
+  </script>
+</body>
+</html>
