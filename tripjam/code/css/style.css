@@ -839,6 +839,24 @@ li a.iconAdd {
   display: block;
 }
 
+.btnPrimary {
+  background-image: linear-gradient(-225deg, #09C5E6 0%, #19CDA1 100%);
+  text-align: center;
+  line-height: 44px;
+  font-size: 15px;
+  width: 280px;
+  height: 44px;
+  border-style: none;
+  border-radius: 22px;
+  margin: 15px auto;
+
+}
+
+.btnPrimary a {
+  color: #ffffff;
+  display: block;
+}
+
 .userText{
   font-family: 'yumincho';
   font-size: 14px;
