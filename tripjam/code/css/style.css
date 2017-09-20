@@ -1221,6 +1221,66 @@ position: relative;
   margin-bottom: 15px;
 }
 
+/* Chat Style */
+.chatStart {
+  background: rgba(0,0,0,0.20);
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 10px;
+  line-height: 1;
+  text-align: center;
+  padding: 3px 10px;
+  margin: 10px;
+}
+
+.chatL {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.chatL .userIconS {
+  margin-right: 10px;
+}
+
+.chatMessageL {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 60%;
+}
+
+.chatR {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.chatR .userIconS {
+  margin-left: 10px;
+}
+
+.chatMessageR {
+  background: #66B5C4;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 60%;
+}
+
+.chatL .timeStampGrey {
+  margin-left: 10px;
+}
+
+.chatR .timeStampGrey {
+  margin-right: 10px;
+}
+
 /* TabBar分高さ確保 */
 #wrap {
   margin-bottom: 64px;
