@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prototype of Trip Jam</title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href="favicon.ico" rel="shortcut icon" />
+</head>
+<body id="weLikeYou">
+<!--navigationTabBar-->
+<header class="navBar">
+  <a href="javascript:history.back()"><div class="iconBack"></div></a>
+  <div class="navTitle">
+    <p>💖We Like You!💖</p>
+  </div>
+</header>
+<!-- contents -->
+  <div id="wrap">
+    <!-- tagSort -->
+    <div class="tagSort clearfix">
+      <span class="tagCountry selectedTag"><a href="">All</a></span>
+      <span class="tagCountry"><a href="">🇯🇵Japan</a></span>
+      <span class="tagCountry"><a href="">🇹🇭Thailand</a></span>
+      <span class="tagCountry"><a href="">🇲🇽Mexico</a></span>
+    </div>
+    <div class="content">
+      <div class="listUser">
+        <a href="">
+          <img class="listUserIconS" src="https://hustlepress.co.jp/wp/wp-content/uploads/34a3923e0298c68adcd52747aff61cf9/araki02_gravure01.jpg" />
+          <p class="listUserName">Yuko Fujisaki 🇯🇵</p>
+        </a>
+      </div>
+
+      <div class="listUser">
+        <a href="">
+          <img class="listUserIconS" src="https://pbs.twimg.com/profile_images/867752496021872640/LdUTNIMd_400x400.jpg" />
+          <p class="listUserName">Koji Fujisaki 🇹🇭</p>
+        </a>
+      </div>
+
+      <div class="listUser">
+        <a href="">
+          <img class="listUserIconS" src="http://aikru.com/file/parts/691/3e8345d198ebdfd7ccc82c36d753b0dd.jpg" />
+          <p class="listUserName">Rino Sashihara 🇲🇽</p>
+        </a>
+      </div>
+
+      <div class="listUser">
+        <a href="">
+          <img class="listUserIconS" src="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/14980731_1129486137129547_2180596381401218463_n.jpg?oh=ca58053d1a8727349699c83d679c6dd8&oe=5A1B36D9" />
+          <p class="listUserName">Naoki Fukushima 🇯🇵</p>
+        </a>
+      </div>
+
+      <div class="listUser">
+        <a href="">
+          <img class="listUserIconS" src="http://girls-hapiness.club/wp-content/uploads/2015/03/5188cd1d77b76fa40ce73cd32b211986.png" />
+          <p class="listUserName">Haruna Kojima 🇹🇭</p>
+        </a>
+      </div>
+
+      <div class="listUser">
+        <a href="">
+          <img class="listUserIconS" src="https://pbs.twimg.com/profile_images/459220792987754496/ukqP1Plv_400x400.jpeg" />
+          <p class="listUserName">Yuko Fujisaki 🇲🇽</p>
+        </a>
+      </div>
+
+      <div class="listUser">
+        <a href="">
+          <img class="listUserIconS" src="https://pbs.twimg.com/profile_images/878206134930120704/ziRmEggA_400x400.jpg" />
+          <p class="listUserName">Nao Minami 🇯🇵</p>
+        </a>
+      </div>
+
+      <div class="listUser">
+        <a href="">
+          <img class="listUserIconS" src="https://pbs.twimg.com/profile_images/878206221081169920/gADdeIGR_400x400.jpg" />
+          <p class="listUserName">Kaede Takashima 🇹🇭</p>
+        </a>
+      </div>
+
+      <div class="listUser">
+        <a href="">
+          <img class="listUserIconS" src="https://pbs.twimg.com/profile_images/878206381173596160/jI4TxsXu_400x400.jpg" />
+          <p class="listUserName">Hinako Ohgami 🇲🇽</p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+<!--FixedTabBar-->
+  <footer class="tabBarFixed">
+    <ul class="tabBar">
+      <li><a href="search_destination.html" class="iconSearch">Search</a></li>
+      <li><a href="like_spot.html" class="iconLike">Like</a></li>
+      <li><a href="#" class="iconAdd">Add Story</a></li>
+      <li><a href="notification_all.html" class="iconNotification">Noticication</a></li>
+      <li><a href="profile_story.html" class="iconUser">Profile</a></li>
+    </ul>
+  </footer>
+
+
+<!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDV2qIxNquG92BrUtkFyMphujvRMcTphKY",
+      authDomain: "tripjam-55e50.firebaseapp.com",
+      databaseURL: "https://tripjam-55e50.firebaseio.com",
+      projectId: "tripjam-55e50",
+      storageBucket: "tripjam-55e50.appspot.com",
+      messagingSenderId: "180322927948"
+    };
+    firebase.initializeApp(config);
+  </script>
+</body>
+</html>

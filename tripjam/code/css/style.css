@@ -1187,6 +1187,39 @@ position: relative;
   height: 180px;
 }
 
+/* Reviewer Style */
+.reviewerCover img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(80%);
+}
+
+.coverTitle {
+  position: absolute;
+  text-align: center;
+  color: #ffffff;
+}
+
+.listReviewer {
+  background: #ffffff;
+  text-align: center;
+  padding: 20px 15px;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.listReviewer .userIconS {
+  margin-bottom: 5px;
+}
+
+.listReviewer .userName {
+  margin-bottom: 5px;
+}
+
+.listReviewer .timeStampGrey {
+  margin-bottom: 15px;
+}
 
 /* TabBar分高さ確保 */
 #wrap {
