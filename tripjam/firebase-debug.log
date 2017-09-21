@@ -1,38 +1,42 @@
-[debug] [2017-09-20T13:47:37.243Z] ----------------------------------------------------------------------
-[debug] [2017-09-20T13:47:37.246Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
-[debug] [2017-09-20T13:47:37.246Z] CLI Version:   3.12.0
-[debug] [2017-09-20T13:47:37.246Z] Platform:      darwin
-[debug] [2017-09-20T13:47:37.246Z] Node Version:  v6.11.3
-[debug] [2017-09-20T13:47:37.247Z] Time:          Wed Sep 20 2017 22:47:37 GMT+0900 (JST)
-[debug] [2017-09-20T13:47:37.247Z] ----------------------------------------------------------------------
+[debug] [2017-09-21T15:52:54.346Z] ----------------------------------------------------------------------
+[debug] [2017-09-21T15:52:54.349Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2017-09-21T15:52:54.350Z] CLI Version:   3.12.0
+[debug] [2017-09-21T15:52:54.350Z] Platform:      darwin
+[debug] [2017-09-21T15:52:54.350Z] Node Version:  v6.11.3
+[debug] [2017-09-21T15:52:54.350Z] Time:          Fri Sep 22 2017 00:52:54 GMT+0900 (JST)
+[debug] [2017-09-21T15:52:54.350Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2017-09-20T13:47:37.262Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2017-09-20T13:47:37.262Z] > authorizing via signed-in user
-[debug] [2017-09-20T13:47:37.265Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tripjam-55e50  
- Wed Sep 20 2017 22:47:37 GMT+0900 (JST)
-[debug] [2017-09-20T13:47:39.041Z] <<< HTTP RESPONSE 200
-[debug] [2017-09-20T13:47:39.042Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/tripjam-55e50/tokens  
- Wed Sep 20 2017 22:47:39 GMT+0900 (JST)
-[debug] [2017-09-20T13:47:39.947Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-21T15:52:54.365Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-09-21T15:52:54.365Z] > authorizing via signed-in user
+[debug] [2017-09-21T15:52:54.368Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tripjam-55e50  
+ Fri Sep 22 2017 00:52:54 GMT+0900 (JST)
+[debug] [2017-09-21T15:52:55.240Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-21T15:52:55.242Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/tripjam-55e50/tokens  
+ Fri Sep 22 2017 00:52:55 GMT+0900 (JST)
+[debug] [2017-09-21T15:52:55.924Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Deploying to 'tripjam-55e50'...
 [info] 
 [info] i  deploying hosting
 [info] i  hosting: preparing code directory for upload...
-[debug] [2017-09-20T13:47:42.222Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/tripjam-55e50/uploads/-KuUXp9FbJwhgYdHa55G?fileCount=47&message=  
- Wed Sep 20 2017 22:47:42 GMT+0900 (JST)
-[debug] [2017-09-20T13:48:51.184Z] <<< HTTP RESPONSE 409
-[debug] [2017-09-20T13:48:51.185Z] <<< HTTP RESPONSE BODY undefined
-[debug] [2017-09-20T13:48:51.198Z] TypeError: Cannot read property 'error' of undefined
-    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:10:12)
-    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:43:25)
-    at Request.self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:188:22)
-    at emitTwo (events.js:106:13)
-    at Request.emit (events.js:191:7)
-    at Request.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1171:10)
-    at emitOne (events.js:96:13)
-    at Request.emit (events.js:188:7)
-    at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:1091:12)
-    at IncomingMessage.g (events.js:292:16)
+[debug] [2017-09-21T15:52:58.281Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/tripjam-55e50/uploads/-Ku_84tH5LSe4-lKeKYX?fileCount=49&message=  
+ Fri Sep 22 2017 00:52:58 GMT+0900 (JST)
+[debug] [2017-09-21T15:54:40.525Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-21T15:54:40.540Z] [hosting] .tgz uploaded successfully, waiting for extraction
 [error] 
-[error] Error: An unexpected error has occurred.
+[error] Error: File upload failed: Deploy failed.
+[debug] [2017-09-21T15:55:36.528Z] Error Context: {
+  "duration": 140234,
+  "fileCount": 49,
+  "ip": "115.177.149.113",
+  "start": 1506009195401,
+  "status": "failed",
+  "statusMessage": "Deploy failed.",
+  "uid": "113939331958148111011",
+  "uploadedCount": 49,
+  "user": {
+    "email": "devpujisi@gmail.com",
+    "gaiaId": "113939331958148111011",
+    "image": "https://lh3.googleusercontent.com/-eGVOp8IuRag/AAAAAAAAAAI/AAAAAAAAABQ/jaasN6eEvH0/photo.jpg"
+  }
+}

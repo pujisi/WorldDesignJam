@@ -263,6 +263,15 @@ input::-webkit-input-placeholder {
   padding-top: 14px;
 }
 
+.navLabelRight {
+  text-align: right;
+  margin-right: 15px;
+}
+
+.navLabelRight a {
+  color: #19CDA1;
+}
+
 .navTabBar .tab li a {
   color: rgba(25, 205, 161, 0.80);
 }
@@ -1188,17 +1197,27 @@ position: relative;
 }
 
 /* Reviewer Style */
+.reviewerCover {
+  position: relative;
+}
+
 .reviewerCover img {
   width: 100%;
   height: 100px;
   object-fit: cover;
   object-position: center;
-  filter: brightness(80%);
+  filter: brightness(60%);
 }
 
 .coverTitle {
   position: absolute;
-  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
   color: #ffffff;
 }
 
@@ -1230,7 +1249,7 @@ position: relative;
   line-height: 1;
   text-align: center;
   padding: 3px 10px;
-  margin: 10px;
+  margin: 10px 20%;
 }
 
 .chatL {
@@ -1244,12 +1263,16 @@ position: relative;
 }
 
 .chatMessageL {
-  background: #ffffff;
-  border-radius: 12px;
+  background: #fff7cc;
+  border-radius: 0 12px 12px 12px;
   padding: 10px;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.6;
   max-width: 60%;
+}
+
+.chatL .timeStampGrey {
+  margin-left: 10px;
 }
 
 .chatR {
@@ -1266,19 +1289,32 @@ position: relative;
 .chatMessageR {
   background: #ACEFA6;
   color: #000000;
-  border-radius: 12px;
+  border-radius: 12px 0 12px 12px;
   padding: 10px;
   font-size: 14px;
   line-height: 1.5;
   max-width: 60%;
 }
 
-.chatL .timeStampGrey {
-  margin-left: 10px;
-}
-
 .chatR .timeStampGrey {
   margin-right: 10px;
+}
+
+/* Compose */
+.addPhoto {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border: 1px #cccccc dashed;
+  background: #ffffff;
+  color: #ababab;
+  margin: 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.inputPhoto {
+  display: none;
 }
 
 /* TabBar分高さ確保 */

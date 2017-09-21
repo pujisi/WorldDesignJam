@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prototype of Trip Jam</title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href="favicon.ico" rel="shortcut icon" />
+</head>
+<body id="compose">
+<!--navigationTabBar-->
+<header class="navBar">
+  <a href="javascript:history.back()"><div class="iconBack"></div></a>
+  <div class="navTitle">
+    <p class="navLabelRight"><a href="">Post</a></p>
+  </div>
+</header>
+<!-- contents -->
+  <div id="wrap">
+    <div class="content">
+      <form>
+        <label class="addPhoto preview" for="file">
+          Add Photo
+          <input class="inputPhoto" id="file" type="file" accept="image/*;capture=camera">
+        </label>
+
+        <div>
+          <input class="addPhoto" type="file" accept="image/*;capture=camera">
+        </div>
+
+        <input type="file" accept="video/*;capture=camcorder">
+        <input type="file" accept="audio/*;capture=microphone">
+      </form>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+  // プレビューするjs
+  // documentと毎回書くのがだるいので$に置き換え
+  var $ = document;
+  var $form = $.querySelector('form');// jQueryの $("form")相当
+
+  //jQueryの$(function() { 相当(ただし厳密には違う)
+  $.addEventListener('DOMContentLoaded', function() {
+      //画像ファイルプレビュー表示
+      //  jQueryの $('input[type="file"]')相当
+      // addEventListenerは on("change", function(e){}) 相当
+      $.querySelector('input[type="file"]').addEventListener('change', function(e) {
+          var file = e.target.files[0],
+                 reader = new FileReader(),
+                 $preview =  $.querySelector(".preview"), // jQueryの $(".preview")相当
+                 t = this;
+
+          // 画像ファイル以外の場合は何もしない
+          if(file.type.indexOf("image") < 0){
+            return false;
+          }
+
+          reader.onload = (function(file) {
+            return function(e) {
+               //jQueryの$preview.empty(); 相当
+               while ($preview.firstChild) $preview.removeChild($preview.firstChild);
+
+              // imgタグを作成
+              var img = document.createElement( 'img' );
+              img.setAttribute('src',  e.target.result);
+              img.setAttribute('width', '150px');
+              img.setAttribute('title',  file.name);
+              // imgタグを$previeの中に追加
+              $preview.appendChild(img);
+            };
+          })(file);
+
+          reader.readAsDataURL(file);
+      });
+  });
+</script>
+
+<!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDV2qIxNquG92BrUtkFyMphujvRMcTphKY",
+      authDomain: "tripjam-55e50.firebaseapp.com",
+      databaseURL: "https://tripjam-55e50.firebaseio.com",
+      projectId: "tripjam-55e50",
+      storageBucket: "tripjam-55e50.appspot.com",
+      messagingSenderId: "180322927948"
+    };
+    firebase.initializeApp(config);
+  </script>
+</body>
+</html>
