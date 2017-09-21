@@ -1255,8 +1255,8 @@ position: relative;
 .chatR {
   margin: 15px;
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
-  justify-content: flex-end;
 }
 
 .chatR .userIconS {
@@ -1264,8 +1264,8 @@ position: relative;
 }
 
 .chatMessageR {
-  background: #66B5C4;
-  color: #ffffff;
+  background: #ACEFA6;
+  color: #000000;
   border-radius: 12px;
   padding: 10px;
   font-size: 14px;
