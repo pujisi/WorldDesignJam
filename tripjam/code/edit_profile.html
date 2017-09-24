@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prototype of Trip Jam</title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href="favicon.ico" rel="shortcut icon" />
+</head>
+<body id="editProfile">
+
+
+  <!--header-->
+  <header class="header">
+    <ul>
+      <li class="header__left"><a href="javascript:history.back()"><div class="iconBack iconBacknew"></div></a></li>
+    </ul>
+    <div class="header__title">Edit Profile</div>
+    <ul>
+      <li class="header__label header__right"><a href=""></a></li>
+      <li class="header__label header__right"><a href=""></a></li>
+    </ul>
+  </header>
+
+<!--profileCover-->
+    <div class="Cover">
+      <img class="imgCover" src="images/spots/kuala-lumpur-1820944_1280.jpg" alt="" />
+      <div class="profileSetting">
+        <p class="btnWhiteBorder "><a href="#" class="iconEditPhoto">Edit</a></p>
+      </div>
+      <a href="#" class="iconEditUserIcon">Edit
+        <img class="userIconM profileUserIcon profileUserIcon--edit" src="http://girls-hapiness.club/wp-content/uploads/2015/03/5188cd1d77b76fa40ce73cd32b211986.png" />
+      </a>
+        <div class="userProfileSet">
+        <p class="userName">Haruna Kojima &#x1f1ef;&#x1f1f5;</p>
+          <p class="userText userTextBox">はじめまして！こんにちわ。趣味は旅行で、旅の写真を見てるだけでわくわくします！おすすめの場所とかいろいろしれたらいいなと思います💖</p>
+      </div>
+    </div>
+
+<!-- contents -->
+  <div id="wrap">
+    <div class="content">
+
+    </div>
+  </div>
+
+
+<!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDV2qIxNquG92BrUtkFyMphujvRMcTphKY",
+      authDomain: "tripjam-55e50.firebaseapp.com",
+      databaseURL: "https://tripjam-55e50.firebaseio.com",
+      projectId: "tripjam-55e50",
+      storageBucket: "tripjam-55e50.appspot.com",
+      messagingSenderId: "180322927948"
+    };
+    firebase.initializeApp(config);
+  </script>
+</body>
+</html>

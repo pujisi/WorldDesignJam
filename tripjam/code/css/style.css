@@ -236,8 +236,15 @@ input::-webkit-input-placeholder {
 
 /* navigationTabBar */
 .tabHeader {
+  width: 100%;
   background: #ffffff;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
+}
+
+.tabHeader__title {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 15px;
 }
 
 .tabHeader__tabLabel a {
@@ -256,29 +263,48 @@ input::-webkit-input-placeholder {
   color: #19CDA1;
 }
 
-.header__title {
-  color: #000000;
-  font-size: 15px;
-  text-align: center;
-  padding-top: 14px;
+/* header */
+.header {
+  width: 100%;
+  height: 48px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
 }
 
-.navLabelRight {
-  text-align: right;
+.header__label {
+  display: inline-block;
+}
+
+.header__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  display: inline;
+}
+
+.iconBacknew {
+  display: block;
+}
+
+.header__left {
+  margin-left: 15px;
+}
+
+.header__right {
   margin-right: 15px;
 }
 
-.navLabelRight a {
-  color: #19CDA1;
-}
+----
 
-/* NavigationBar */
-.header {
-  width: 100%;
-  height: 43px;
-  background: #ffffff;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
-}
 
 .iconBack {
   position: absolute;
@@ -695,6 +721,7 @@ li a.iconAdd {
   background: #ffffff;
   height: auto;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
+  position: relative;
 }
 
 .imgCover {
@@ -737,6 +764,14 @@ li a.iconAdd {
   font-family: "FontAwesome";
 }
 
+.iconEditPhoto:before {
+  color: rgba(255,255,255,0.80);
+  content:"\f030";
+  font-size: 14px;
+  margin-right: 3px;
+  font-family: "FontAwesome";
+}
+
 .btnUserLike a {
   background: #ffffff;
   text-align: center;
@@ -766,6 +801,26 @@ li a.iconAdd {
 .profileUserIcon {
   position: absolute;
   top: 300px;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.profileUserIcon--edit {
+  filter: brightness(80%);
+}
+
+.iconEditUserIcon:before {
+  color: rgba(255,255,255,0.80);
+  content:"\f030";
+  font-size: 10px;
+  margin-right: 3px;
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%,-50%);
   -moz-transform: translate(-50%,-50%);
