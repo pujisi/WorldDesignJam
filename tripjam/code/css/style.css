@@ -218,45 +218,45 @@ input::-webkit-input-placeholder {
   display: block;
 }
 
-.searchHeader .tab li a {
+.searchHeader__tabLabel a {
   color: rgba(255,255,255,0.80);
 }
 
-.searchHeader .tab li a:hover {
+.searchHeader__tabLabel a:hover {
   color: #ffffff;
 }
 
-.searchHeader .tab .selected {
+.searchHeader__tabLabel--selected {
   border-bottom: 2px solid #ffffff;
 }
 
-.searchHeader .tab .selected a {
+.searchHeader__tabLabel--selected a {
   color: #ffffff;
 }
 
 /* navigationTabBar */
-.navTabBar {
+.tabHeader {
   background: #ffffff;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
 }
 
-.navTabBar .tab li a {
+.tabHeader__tabLabel a {
   color: rgba(25, 205, 161, 0.80);
 }
 
-.navTabBar .tab li a:hover {
+.tabHeader__tabLabel a:hover {
   color: #19CDA1;
 }
 
-.navTabBar .tab .selected {
+.tabHeader__tabLabel--selected {
   border-bottom: 2px solid #19CDA1;
 }
 
-.navTabBar .tab .selected a {
+.tabHeader__tabLabel--selected a {
   color: #19CDA1;
 }
 
-.navBar__Title {
+.header__title {
   color: #000000;
   font-size: 15px;
   text-align: center;
