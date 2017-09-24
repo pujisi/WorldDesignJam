@@ -148,21 +148,6 @@ img{
   right: 0;
 }
 
-
-#home h1.hashHeading1 {
-  /*font-family: 'Dosis', sans-serif;*/
-  font-family: 'Helvetica Neue', sans-serif;
-  font-weight: bold;
-  font-size: 36px;
-  margin: 30px 20px 20px 20px;
-}
-
-#home h1.hashHeading1 a {
-  text-decoration: none;
-  color: #000000;
-}
-
-
 h1.hashHeading1 {
   /*font-family: 'Dosis', sans-serif;*/
   font-family: 'Helvetica Neue', sans-serif;
@@ -176,21 +161,20 @@ h1.hashHeading1 a {
   color: #000000;
 }
 
-
 /* navigationTabBarWithSearch */
-#home header {
+.searchHeader {
   width: 100%;
   background-image: linear-gradient(-225deg, #09C5E6 0%, #19CDA1 100%);
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
 }
 
-#home header .navSearchform {
+.searchHeader__formBox {
   width: 100%;
   padding: 15px;
   box-sizing: border-box;
 }
 
-#home header .navSearchform .search {
+.searchHeader__form {
   width: 100%;
   height: 1;
   line-height: 44px;
@@ -201,7 +185,7 @@ h1.hashHeading1 a {
   box-sizing: border-box;
 }
 
-.search input {
+.searchHeader__form input {
   width: 100%;
   height: 28px;
   color: #ffffff;
@@ -209,17 +193,17 @@ h1.hashHeading1 a {
   border-style: none;
 }
 
+.searchHeader__form button {
+  display: none;
+}
+
 input::-webkit-input-placeholder {
   color: rgba(255,255,255,0.50);
   line-height: 1.5;
 }
 
-#home header .navSearchform button {
-  display: none;
-}
-
 /* navigationTabs */
-.tab{
+.tab {
   overflow: hidden;
 }
 
@@ -234,19 +218,19 @@ input::-webkit-input-placeholder {
   display: block;
 }
 
-#home .tab li a {
+.searchHeader .tab li a {
   color: rgba(255,255,255,0.80);
 }
 
-#home .tab li a:hover {
+.searchHeader .tab li a:hover {
   color: #ffffff;
 }
 
-#home .tab .selected {
+.searchHeader .tab .selected {
   border-bottom: 2px solid #ffffff;
 }
 
-#home .tab .selected a {
+.searchHeader .tab .selected a {
   color: #ffffff;
 }
 
@@ -254,22 +238,6 @@ input::-webkit-input-placeholder {
 .navTabBar {
   background: #ffffff;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
-}
-
-.navTitle {
-  color: #000000;
-  font-size: 15px;
-  text-align: center;
-  padding-top: 14px;
-}
-
-.navLabelRight {
-  text-align: right;
-  margin-right: 15px;
-}
-
-.navLabelRight a {
-  color: #19CDA1;
 }
 
 .navTabBar .tab li a {
@@ -285,6 +253,22 @@ input::-webkit-input-placeholder {
 }
 
 .navTabBar .tab .selected a {
+  color: #19CDA1;
+}
+
+.navBar__Title {
+  color: #000000;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 14px;
+}
+
+.navLabelRight {
+  text-align: right;
+  margin-right: 15px;
+}
+
+.navLabelRight a {
   color: #19CDA1;
 }
 
@@ -320,7 +304,7 @@ input::-webkit-input-placeholder {
 }
 
 /* Special Contents Style */
-#home .specialContents img {
+.specialContents img {
   width: 100%;
   height: 320px;
   object-fit: cover;
@@ -328,11 +312,11 @@ input::-webkit-input-placeholder {
   filter: brightness(80%);
 }
 
-#home .specialContents {
+.specialContents {
   position: relative;
 }
 
-#home .specialContents span {
+.specialContents span {
   position: absolute;
   color: #ffffff;
   font-size: 32px;
@@ -355,17 +339,17 @@ input::-webkit-input-placeholder {
   clear: both;
 }
 
-#home .listCountry li {
+.listCountry li {
   float: left;
   width: 49.8%;
   margin-bottom: 1px;
 }
 
-#home .listCountry li:nth-child(2n){
+.listCountry li:nth-child(2n){
   margin-left: 0.4%;
 }
 
-#home .listCountry li img {
+.listCountry li img {
   display: block;
   width: 100%;
   height: 160px;
@@ -374,11 +358,11 @@ input::-webkit-input-placeholder {
   filter: brightness(80%);
 }
 
-#home .blockCountry {
+.blockCountry {
   position: relative;
 }
 
-#home .blockCountry span {
+.blockCountry span {
   position: absolute;
   color: #ffffff;
   font-size: 14px;
@@ -639,9 +623,6 @@ li a.iconAdd {
 .gridStory .cardLocation {
   display: none;
 }
-
-
-
 
 /* List Style */
 .listUser:first-child {
@@ -1036,7 +1017,6 @@ li a.iconAdd {
   background: #ffffff;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);
 }
-
 
 .spotImg {
   width: 100%;
