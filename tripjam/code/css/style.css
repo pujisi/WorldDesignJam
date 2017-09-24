@@ -18,11 +18,7 @@ body {
   background: #f9f9f9;
 }
 
-li {
-  list-style: none;
-}
-
-img{
+img {
   max-width: 100%;
 }
 
@@ -161,7 +157,23 @@ h1.hashHeading1 a {
   color: #000000;
 }
 
-/* navigationTabBarWithSearch */
+/* Tabs Style */
+.tab {
+  overflow: hidden;
+}
+
+.tab li {
+  float: left;
+}
+
+.tab li a {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 15px 20px 13px 20px;
+  display: block;
+}
+
+/* header With Tabs & Search */
 .searchHeader {
   width: 100%;
   background-image: linear-gradient(-225deg, #09C5E6 0%, #19CDA1 100%);
@@ -202,22 +214,6 @@ input::-webkit-input-placeholder {
   line-height: 1.5;
 }
 
-/* navigationTabs */
-.tab {
-  overflow: hidden;
-}
-
-.tab li {
-  float: left;
-}
-
-.tab li a {
-  font-size: 14px;
-  font-weight: bold;
-  padding: 15px 20px 13px 20px;
-  display: block;
-}
-
 .searchHeader__tabLabel a {
   color: rgba(255,255,255,0.80);
 }
@@ -234,7 +230,7 @@ input::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-/* navigationTabBar */
+/* header With Tabs */
 .tabHeader {
   width: 100%;
   background: #ffffff;
@@ -291,10 +287,6 @@ input::-webkit-input-placeholder {
   display: inline;
 }
 
-.iconBacknew {
-  display: block;
-}
-
 .header__left {
   margin-left: 15px;
 }
@@ -303,18 +295,8 @@ input::-webkit-input-placeholder {
   margin-right: 15px;
 }
 
-----
-
-
-.iconBack {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 36px;
-  height: 36px;
-  float: left;
-  margin: 11px 15px;
+.header__right .linkPrimary {
+  color: #19CDA1;
 }
 
 .iconBack:before {
@@ -323,10 +305,6 @@ input::-webkit-input-placeholder {
   font-size: 1.2em;
   margin-right: 5px;
   font-family: "FontAwesome";
-}
-
-.clear {
-  clear: both;
 }
 
 /* Special Contents Style */
