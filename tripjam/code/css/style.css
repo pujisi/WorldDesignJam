@@ -22,6 +22,14 @@ img {
   max-width: 100%;
 }
 
+input::-webkit-input-placeholder {
+  color: #ababab;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #ababab;
+}
+
 #login {
   background: url("../images/backgroundHongkong@2x.png") no-repeat;
   background-position: center top;
@@ -209,7 +217,7 @@ h1.hashHeading1 a {
   display: none;
 }
 
-input::-webkit-input-placeholder {
+.searchHeader__form input::-webkit-input-placeholder {
   color: rgba(255,255,255,0.50);
   line-height: 1.5;
 }
@@ -302,6 +310,14 @@ input::-webkit-input-placeholder {
 .iconBack:before {
   color: #000000;
   content:"\f104";
+  font-size: 1.2em;
+  margin-right: 5px;
+  font-family: "FontAwesome";
+}
+
+.iconEllipsis:before {
+  color: #000000;
+  content:"\f141";
   font-size: 1.2em;
   margin-right: 5px;
   font-family: "FontAwesome";
@@ -805,6 +821,62 @@ li a.iconAdd {
   -ms-transform: translate(-50%,-50%);
   -o-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
+}
+
+.editCover {
+  background: #ffffff;
+  position: relative;
+}
+
+.editPhoto {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.editPhoto__link a {
+  color: #19CDA1;
+}
+
+.formEdit {
+  margin: 15px;
+}
+
+.formEdit__label {
+  font-size: 12px;
+  color: #ababab;
+  margin-bottom: 10px;
+}
+
+.formEdit__text {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.8;
+  border-bottom: 1px #ababab solid;
+  margin-bottom: 40px;
+}
+
+.formEdit__select {
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.8;
+  border-bottom: 1px #ababab solid;
+  margin-bottom: 40px;
+}
+
+.formEdit__discription {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  font-family: 'yumincho';
+  font-size: 16px;
+  line-height: 1.8;
+  border-bottom: 1px #ababab solid;
+  margin-bottom: 40px;
 }
 
 .userName {
@@ -1341,6 +1413,11 @@ position: relative;
 
 #photo #wrap {
   margin-bottom: 50px;
+}
+
+/* 背景白塗り */
+#editProfile {
+  background: #ffffff;
 }
 
 @media screen and (max-width:600px) {
