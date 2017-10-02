@@ -11,7 +11,6 @@
 </head>
 <body id="compose">
 <!--header-->
-<!--header-->
 <header class="header">
   <ul>
     <li class="header__left"><a href="javascript:history.back()"><div class="iconBack iconBacknew"></div></a></li>
@@ -25,15 +24,22 @@
 <!-- contents -->
   <div id="wrap">
     <div class="content">
-      <form>
-        <label class="addPhoto preview" for="file">
-          Add Photo
-          <input class="inputPhoto" id="file" type="file" accept="image/*;capture=camera">
-        </label>
 
-        <input type="file" accept="video/*;capture=camcorder">
-        <input type="file" accept="audio/*;capture=microphone">
+      <form class="formEdit">
+        <div class="addPhoto">
+          <label class="addPhoto__form preview" for="file">
+            Add Photo
+            <input class="addPhoto__input" id="file" type="file" accept="image/*;capture=camera">
+          </label>
+          <textarea class="formEdit__caption" placeholder="Write a caption..."></textarea>
+        </div>
       </form>
+      <a class="list" href="">
+        <p class="list__text iconLocation">Add Location...</p><div class="list__icon iconChevron"></div>
+      </a>
+      <a class="list" href="">
+        <p class="list__text iconClock">Edit Date</p><div class="list__icon iconChevron"></div>
+      </a>
     </div>
   </div>
 
@@ -68,7 +74,7 @@
               // imgタグを作成
               var img = document.createElement( 'img' );
               img.setAttribute('src',  e.target.result);
-              img.setAttribute('width', '150px');
+              img.setAttribute('width', '82px');
               img.setAttribute('title',  file.name);
               // imgタグを$previeの中に追加
               $preview.appendChild(img);
